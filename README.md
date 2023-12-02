@@ -25,8 +25,8 @@ https://polygonscan.com/chart/gasprice
 | Chainlink Automation | [ ] TO DO  |
 
 
-```[tasklist]
+[tasklist]
 ### My tasks
 - [ ] https://github.com/octo-org/octo-repo/issues/45
 - [ ] Draft task
-```
+
