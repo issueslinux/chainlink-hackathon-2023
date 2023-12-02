@@ -16,17 +16,10 @@ https://polygonscan.com/chart/gasprice
 
 ## Chainlink solutions used in the project
 
-| Chainlink  | Status |
-| ------------- | ------------- |
-| Chainlink Node  | [tasklist] 
-- [ ] Draft task|
-| External adapter  | [x] DONE |
-| External initiator  | [x] DONE |
-| Dynamic NFT  | [ ] TO DO |
-| Chainlink Automation | [ ] TO DO  |
-
-
 [tasklist]
-- [ ] https://github.com/octo-org/octo-repo/issues/45
-- [ ] Draft task
+- [x] Chainlink Node
+- [x] External adapter
+- [x] External initiator
+- [ ] Dynamic NFT
+- [ ] Chainlink Automation
 
