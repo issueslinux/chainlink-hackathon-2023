@@ -16,7 +16,6 @@ https://polygonscan.com/chart/gasprice
 
 ## Chainlink solutions used in the project
 
-[tasklist]
 - [x] Chainlink Node
 - [x] External adapter
 - [x] External initiator
