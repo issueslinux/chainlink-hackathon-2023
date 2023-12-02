@@ -18,8 +18,15 @@ https://polygonscan.com/chart/gasprice
 
 | Chainlink  | Status |
 | ------------- | ------------- |
-| Chainlink Node  | - [ ] |
+| Chainlink Node  | [x] DONE |
 | External adapter  | [x] DONE |
 | External initiator  | [x] DONE |
 | Dynamic NFT  | [ ] TO DO |
 | Chainlink Automation | [ ] TO DO  |
+
+
+```[tasklist]
+### My tasks
+- [ ] https://github.com/octo-org/octo-repo/issues/45
+- [ ] Draft task
+```
