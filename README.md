@@ -13,3 +13,10 @@ The goal of the project is to create a Multi-Chain store serving IT events such 
 https://polygonscan.com/chart/gasprice
 
 3. An open architecture to enable the addition of new networks in the future and to operate on different networks in the process of selling a single product. E.g. selling 100 hackathon tickets: 90% will be saved on the **Harmony** network, 5% on the **Celo** network and 1% on the **Polygon** network depending on the amount of instant fees. 
+
+## Chainlink solutions used in the project
+
+| Chainlink  | Status |
+| ------------- | ------------- |
+| Content Cell  | Content Cell  |
+| Content Cell  | Content Cell  |
