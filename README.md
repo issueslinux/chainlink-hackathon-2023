@@ -19,6 +19,6 @@ https://polygonscan.com/chart/gasprice
 - [x] Chainlink Node
 - [x] External adapter
 - [x] External initiator
-- [ ] Dynamic NFT
-- [ ] Chainlink Automation
+- [ ] Dynamic NFT (IN PROGRES)
+- [ ] Chainlink Automation (TO DO)
 
