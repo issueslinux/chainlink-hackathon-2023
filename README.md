@@ -18,7 +18,7 @@ https://polygonscan.com/chart/gasprice
 
 | Chainlink  | Status |
 | ------------- | ------------- |
-| Chainlink Node  | [x] DONE |
+| Chainlink Node  | - [ ] |
 | External adapter  | [x] DONE |
 | External initiator  | [x] DONE |
 | Dynamic NFT  | [ ] TO DO |
