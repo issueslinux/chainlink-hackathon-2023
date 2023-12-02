@@ -18,5 +18,6 @@ https://polygonscan.com/chart/gasprice
 
 | Chainlink  | Status |
 | ------------- | ------------- |
-| Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  |
+| Chainlink Node  | Content Cell  |
+| External adapters  | Content Cell  |
+| External initiators  | Content Cell  |
