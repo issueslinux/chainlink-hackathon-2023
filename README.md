@@ -22,23 +22,25 @@ https://polygonscan.com/chart/gasprice
 - [ ] Dynamic NFT (IN PROGRES)
 - [ ] Chainlink Automation (TO DO)
 
-43.157.58.142:3000/
+## Elements used in the project:
 
-              
-event_shop_api [type="http" method=PUT url="http://43.157.58.142:3000/api/tax/classes/gas" requestData="{\\"300\\": {\\"id\\": 300,\\"price\\": $(opt_gas_estimatedFee)}, \\"137\\": {\\"id\\": 137,\\"price\\": $(pol_gas_estimatedFee)}, \\"56\\": {"id": 56,\\"price\\": $(bsc_gas_estimatedFee)}, \\"42161\\": {\\"id\\": 42161,\\"price\\": $(arb_gas_estimatedFee)}, \\"43114\\": {\\"id\\": 43114,\\"price\\": $(ava_gas_estimatedFee)},\\"8453\\": {\\"id\\": 8453,\\"price\\": $(bas_gas_estimatedFee)}, \\"250\\": {\\"id\\": 250,\\"price\\": $(ftm_gas_estimatedFee)}, \\"369\\": {\\"id\\": 369,\\"price\\": $(pul_gas_estimatedFee)},  }" allowUnrestrictedNetworkAccess=true]
+- EventShop (Store design to support programming events). Fork: https://github.com/evershopcommerce/evershop
+- external_gas, external_price (External adapters for API) Fork: https://github.com/smartcontractkit/external-adapters-js
+- external-initiator (Initiate Chainlink job runs from EventShop.) Fork: https://github.com/smartcontractkit/external-initiator
 
-369 - del
-UPDATE gas_price SET price = 0.313 WHERE id = 1666600000;
-1666600000 harmony
-42220 celo
-INSERT INTO gas_price (id, price) VALUES (42220, 0.001);
+## Solution architecture
 
-300 		-optimism:6689
-137 		-polygon:6690
-56  		-bsc:6691 
-42161		-arbitrum: 6692
-43114		-avalanche: 6693
-8453		-base: 6694
-250		-ftm: 6695
-42220		-celo: 6696
-1666600000	-harmony: 6687
+
+
+
+
+
+
+
+
+
+
+
+
+
+
