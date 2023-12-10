@@ -30,7 +30,7 @@ https://polygonscan.com/chart/gasprice
 
 ## Solution architecture
 
-
+![Polgon fees](https://github.com/issueslinux/chainlink-hackathon-2023/blob/main/architecture.drawio.png)
 
 
 
