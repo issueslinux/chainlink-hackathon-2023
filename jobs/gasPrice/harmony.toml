@@ -1,0 +1,31 @@
+type = "cron"
+schemaVersion = 1
+name = "gasHar"
+externalJobID = "c7e1d184-e63a-411d-920f-2982da2cc896"
+forwardingAllowed = false
+maxTaskDuration = "0s"
+schedule = "CRON_TZ=UTC 0 */10 * * * *"
+observationSource = """
+har_price       [type=bridge name="price" requestData="{\\"id\\": $(jobSpec.externalJobID), \\"data\\": { \\"coin\\": \\"ONE\\"}}"]
+har_price_parse      [type=jsonparse path="data,USD"]
+har_price_gwei [type="divide" divisor="1000000000" precision="12"]
+
+har_price->har_price_parse->har_price_gwei
+
+har_gas        [type=bridge name="gas" requestData="{\\"id\\": $(jobSpec.externalJobID), \\"data\\": { \\"network\\": \\"one\\"}}"]
+har_gas_avgGas        [type=jsonparse path="data,avgGas"]
+har_gas_maxFeePerGas        [type=jsonparse path="data,speeds,1,gasPrice"]
+
+
+har_gas->har_gas_avgGas
+har_gas->har_gas_maxFeePerGas
+
+
+har_gas_estimatedFee_val [type="multiply" input="$(har_gas_maxFeePerGas)" times="$(har_price_gwei)"]
+har_gas_estimatedFee [type="multiply" input="$(har_gas_estimatedFee_val)" times="$(har_gas_avgGas)"]
+
+
+eventshop_har [type="http"method=POST url="http://43.157.58.142:3000/api/tax/classes/gas" requestData="{\\"1666600000\\": {\\"id\\": 1666600000,\\"price\\": $(har_gas_estimatedFee)}}" allowUnrestrictedNetworkAccess=true]
+
+har_gas_estimatedFee->eventshop_har
+"""

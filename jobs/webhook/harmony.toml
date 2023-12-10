@@ -1,0 +1,16 @@
+type = "webhook"
+schemaVersion = 1
+name = ""
+externalJobID = "d18143cb-8825-4666-833d-65baaf6aa727"
+forwardingAllowed = false
+observationSource = """
+
+
+    parse_request  [type="jsonparse" path="data" data="$(jobRun.requestBody)"]
+    encode_data  [type="ethabiencode" abi="(bytes32 uuid)"  data="{ \\"uuid\\": $(parse_request) }"]
+    submit_tx    [type="ethtx"
+               to="0xa80141f4Ca6e57a8feaCf1DD0C4E94ec275bcaD3"
+               data="$(encode_data)"
+               failOnRevert="true"]
+
+"""
