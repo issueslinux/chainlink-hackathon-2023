@@ -24,9 +24,9 @@ https://polygonscan.com/chart/gasprice
 
 ## Elements used in the project:
 
-- *EventShop* (Store design to support programming events). Fork: https://github.com/evershopcommerce/evershop
-- external_gas, external_price (External adapters for API) Fork: https://github.com/smartcontractkit/external-adapters-js
-- external-initiator (Initiate Chainlink job runs from EventShop.) Fork: https://github.com/smartcontractkit/external-initiator
+- **EventShop** (Store design to support programming events). Fork: https://github.com/evershopcommerce/evershop
+- **external_gas, external_price** (External adapters for API) Fork: https://github.com/smartcontractkit/external-adapters-js
+- **external-initiator** (Initiate Chainlink job runs from EventShop.) Fork: https://github.com/smartcontractkit/external-initiator
 
 ## Solution architecture
 
