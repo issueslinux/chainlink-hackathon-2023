@@ -1,0 +1,27 @@
+{
+  "name": "eventshop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "setup": "evershop install",
+    "build": "evershop build",
+    "start": "evershop start",
+    "start:debug": "evershop start --debug",
+    "dev": "evershop dev",
+    "user:create": "evershop user:create",
+    "user:changePassword": "evershop user:changePassword"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@evershop/evershop": "^1.0.0-rc.8",
+    "axios": "^1.6.2",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "http-proxy-middleware": "^2.0.6",
+    "qrcode.react": "^3.1.0",
+    "socks": "^2.7.1",
+    "web3-utils": "^4.1.0"
+  }
+}
