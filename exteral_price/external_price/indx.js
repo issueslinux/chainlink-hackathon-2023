@@ -17,7 +17,7 @@ const createRequest = (input, callback) => {
   const jobRunID = validator.validated.id;
   const network = validator.validated.data.network || 'opt';
   const endpoint = `/${network}/gas`;
-  const apikey = '22379171a3d349dc880e39c1013d6f6e';
+  const apikey = APIKEY;
   const url = `https://api.owlracle.info/v4${endpoint}?apikey=${apikey}`;
 
   console.log('URL wysyłany:', url);
